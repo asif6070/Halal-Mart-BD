@@ -2,7 +2,7 @@ export default function Home() {
   const products = [
     {
       id: 1,
-      name: "যৌন শক্তি পিল",
+      name: "টাইম বুস্টার",  // ✅ নাম চেঞ্জ
       price: "2500",
       image: "/InShot_20260709_190552389.jpg",
       desc: "100% হারবাল ও নিরাপদ। কোনো পার্শ্বপ্রতিক্রিয়া নেই।"
@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-green-50 p-4">
-      <h1 className="text-3xl font-bold text-center text-green-800 mb-8">
+      <h1 className="text-4xl font-bold text-center text-green-800 mb-8">
         Halal Mart BD
       </h1>
 
@@ -37,21 +37,21 @@ export default function Home() {
               alt={product.name}
               className="w-full h-64 object-cover rounded-xl mb-4"
             />
-            <h2 className="text-xl font-bold text-green-800">{product.name}</h2>
-            <p className="text-gray-600 my-2">{product.desc}</p>
-            <p className="text-2xl font-bold text-red-600 mb-4">দাম: {product.price} টাকা</p>
+            <h2 className="text-2xl font-bold text-green-800 mb-2">{product.name}</h2>
+            <p className="text-gray-600 text-base mb-3">{product.desc}</p>
+            <p className="text-3xl font-bold text-red-600 mb-4">দাম: {product.price} টাকা</p>
             
             <a 
               href="https://wa.me/8801602124640" 
               target="_blank"
-              className="block w-full bg-green-500 text-white text-center py-3 rounded-xl font-bold mb-2"
+              className="block w-full bg-green-500 text-white text-center py-3 rounded-xl font-bold text-lg mb-2"
             >
               📱 WhatsApp এ অর্ডার করুন
             </a>
 
             <a 
               href="tel:01602124640"
-              className="block w-full bg-pink-500 text-white text-center py-3 rounded-xl font-bold"
+              className="block w-full bg-pink-500 text-white text-center py-3 rounded-xl font-bold text-lg"
             >
               💰 বিকাশ: 01602124640
             </a>
