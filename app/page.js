@@ -2,7 +2,7 @@ export default function Home() {
   const products = [
     {
       id: 1,
-      name: "টাইম বুস্টার",  // ✅ নাম চেঞ্জ
+      name: "টাইম বুস্টার",
       price: "2500",
       image: "/InShot_20260709_190552389.jpg",
       desc: "100% হারবাল ও নিরাপদ। কোনো পার্শ্বপ্রতিক্রিয়া নেই।"
@@ -35,7 +35,7 @@ export default function Home() {
             <img 
               src={product.image} 
               alt={product.name}
-              className="w-full h-64 object-cover rounded-xl mb-4"
+              className="w-full h-48 object-cover rounded-xl mb-4" // ✅ ছবি ছোট
             />
             <h2 className="text-2xl font-bold text-green-800 mb-2">{product.name}</h2>
             <p className="text-gray-600 text-base mb-3">{product.desc}</p>
