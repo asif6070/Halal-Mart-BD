@@ -10,7 +10,7 @@ export default function Home() {
 
       <div style={{border: "2px solid #22c55e", borderRadius: "15px", padding: "15px", backgroundColor: "white", boxShadow: "0 4px 10px rgba(0,0,0,0.1)"}}>
         <img 
-          src"/InShot_20260713_111202.jpg"" 
+        src="/InShot_20260709_190552389.jpg"" 
           alt="টাইম বুস্টার" 
           style={{width: "100%", borderRadius: "10px"}}
         />
