@@ -17,12 +17,7 @@ export default function Shop() {
             <img src={product.image} className="w-full h-32 object-cover rounded-xl mb-3" />
             <h2 className="text-xl font-bold text-green-800">{product.name}</h2>
             <p className="text-2xl font-bold text-red-600 my-2">{product.price} টাকা</p>
-            <a href="<a 
-  href="/shop"
-  className="inline-block mt-6 bg-white text-green-800 px-8 py-3 rounded-full font-bold text-lg"
->
-  সব পণ্য দেখুন
-</a>" target="_blank" className="block bg-green-500 text-white text-center py-2 rounded-lg font-bold">
+            <a href="https://wa.me/8801602124640" target="_blank" className="block bg-green-500 text-white text-center py-2 rounded-lg font-bold">
               অর্ডার করুন
             </a>
           </div>
