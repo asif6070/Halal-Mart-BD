@@ -35,7 +35,7 @@ export default function Home() {
             <img 
               src={product.image} 
               alt={product.name}
-              className="w-full h-48 object-cover rounded-xl mb-4" // ✅ ছবি ছোট
+              className="w-full h-40 object-cover rounded-xl mb-4" // ✅ এখন আরো ছোট
             />
             <h2 className="text-2xl font-bold text-green-800 mb-2">{product.name}</h2>
             <p className="text-gray-600 text-base mb-3">{product.desc}</p>
