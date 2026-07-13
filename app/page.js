@@ -25,7 +25,7 @@ export default function Home() {
         </div>
         
         <h3 style={{color: "red", fontSize: "28px", textAlign: "center", margin: "15px 0"}}>
-          দাম: ২৫০ টাকা
+          দাম: ২৫০০ টাকা
         </h3>
         
         <a href={whatsappLink} target="_blank" style={{
