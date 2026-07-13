@@ -42,7 +42,12 @@ export default function Home() {
             <p className="text-3xl font-bold text-red-600 mb-4">দাম: {product.price} টাকা</p>
             
             <a 
-              href="https://wa.me/8801602124640" 
+              href="<a 
+  href="/shop"
+  className="inline-block mt-6 bg-white text-green-800 px-8 py-3 rounded-full font-bold text-lg"
+>
+  সব পণ্য দেখুন
+</a>" 
               target="_blank"
               className="block w-full bg-green-500 text-white text-center py-3 rounded-xl font-bold text-lg mb-2"
             >
