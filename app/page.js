@@ -1,51 +1,63 @@
 export default function Home() {
-  const whatsappNumber = "8801602124640";
-  const message = "আসসালামু আলাইকুম। আমি 'টাইম বুস্টার' সম্পর্কে জানতে চাই";
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  const products = [
+    {
+      id: 1,
+      name: "যৌন শক্তি পিল",
+      price: "2500",
+      image: "/InShot_20260709_190552389.jpg",
+      desc: "100% হারবাল ও নিরাপদ। কোনো পার্শ্বপ্রতিক্রিয়া নেই।"
+    },
+    {
+      id: 2,
+      name: "প্রিমিয়াম মধু",
+      price: "1200",
+      image: "/InShot_20260709_190552389.jpg",
+      desc: "সুন্দরবনের খাঁটি মধু। 100% ন্যাচারাল।"
+    },
+    {
+      id: 3,
+      name: "কালোজিরা তেল",
+      price: "800",
+      image: "/InShot_20260709_190552389.jpg",
+      desc: "চুল পড়া বন্ধ করে। নতুন চুল গজায়।"
+    }
+  ];
 
   return (
-    <main style={{padding: "20px", backgroundColor: "#f0fdf4", minHeight: "100vh"}}>
-      <h1 style={{textAlign: "center", color: "#166534"}}>টাইম বুস্টার</h1>
-      <p style={{textAlign: "center", fontSize: "18px"}}>পুরুষের গোপন সমস্যার 100% হারবাল সমাধান</p>
+    <main className="min-h-screen bg-green-50 p-4">
+      <h1 className="text-3xl font-bold text-center text-green-800 mb-8">
+        Halal Mart BD
+      </h1>
 
-      <div style={{border: "2px solid #22c55e", borderRadius: "15px", padding: "10px", margin: "20px 0"}}>
-        <img
-          src="/InShot_20260709_190552389.jpg"
-          alt="টাইম বুস্টার"
-          style={{width: "100%", borderRadius: "10px"}}
-        />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {products.map((product) => (
+          <div key={product.id} className="bg-white rounded-2xl shadow-lg p-4 border-2 border-green-200">
+            <img 
+              src={product.image} 
+              alt={product.name}
+              className="w-full h-64 object-cover rounded-xl mb-4"
+            />
+            <h2 className="text-xl font-bold text-green-800">{product.name}</h2>
+            <p className="text-gray-600 my-2">{product.desc}</p>
+            <p className="text-2xl font-bold text-red-600 mb-4">দাম: {product.price} টাকা</p>
+            
+            <a 
+              href="https://wa.me/8801602124640" 
+              target="_blank"
+              className="block w-full bg-green-500 text-white text-center py-3 rounded-xl font-bold mb-2"
+            >
+              📱 WhatsApp এ অর্ডার করুন
+            </a>
+
+            <a 
+              href="tel:01602124640"
+              className="block w-full bg-pink-500 text-white text-center py-3 rounded-xl font-bold"
+            >
+              💰 বিকাশ: 01602124640
+            </a>
+          </div>
+        ))}
       </div>
-
-      <h2 style={{color: "#166534", marginTop: "20px"}}>কেন আমাদের প্রোডাক্ট সেরা?</h2>
-      <p style={{fontSize: "15px"}}>প্রকৃতির সেরা উপাদান দিয়ে তৈরি। কোনো পার্শ্বপ্রতিক্রিয়া নেই।</p>
-
-      <div style={{margin: "15px 0"}}>
-        <p>✅ 100% হারবাল ও নিরাপদ</p>
-        <p>✅ 3 বছরের আস্থা</p>
-        <p>✅ সারা দেশে হোম ডেলিভারি</p>
-        <p>🎁 প্রথমে 7 দিনের স্যাম্পল</p>
-      </div>
-
-      <h3 style={{color: "red", fontSize: "24px", textAlign: "center"}}>
-        দাম: 2500 টাকা
-      </h3>
-
-      <a href={whatsappLink} target="_blank"
-        style={{
-          display: "block",
-          backgroundColor: "#25D366",
-          color: "white",
-          padding: "15px",
-          textAlign: "center",
-          borderRadius: "10px",
-          textDecoration: "none",
-          fontSize: "18px",
-          fontWeight: "bold",
-          marginTop: "20px"
-        }}
-      >
-        📲 WhatsApp এ অর্ডার করুন
-      </a>
     </main>
-  )
+  );
 }
